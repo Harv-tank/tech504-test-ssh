@@ -4,8 +4,6 @@ Table of contents
 
 * [Changing from HTTP to SSH](#Changing from HTTP to SSH)
 
-Push test
-
 ## Changing from HTTP to SSH
 
 
@@ -40,4 +38,13 @@ origin  https://github.com/Harv-tank/tech504-test-ssh.git
 ```
 
 <br>
+
+## Close terminal (Create new push request)
+Below is the error message when attempting to push on the repo after creating a new terminal
+as it no longer has access to private key
+
+``` bash
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+```
 
