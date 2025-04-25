@@ -48,3 +48,27 @@ Permission denied (publickey).
 fatal: Could not read from remote repository.
 ```
 
+Check if your SSH agent is running using the following prompt
+* It and sets up the necessary environment variables so your current terminal can talk to it
+``` bash
+eval "$(ssh-agent -s)"
+```
+
+Then have to add the private SSH key to the agent by providing the directory that the 
+key is located within typically in the .ssh folder
+``` bash
+ssh-add~/.ssh/harvi-github-key
+```
+The part after ssh refers to what I have called the key for the repo.
+<br>
+
+``` bash
+ssh -T git@github.com
+Hi Harv-tank! You've successfully authenticated
+```
+The above prompt ensures the key has been passed through succesfully and should recive a message similar to one above.
+<br>
+Then when attempt to push again it should successfully go through onto the repo
+
+
+
