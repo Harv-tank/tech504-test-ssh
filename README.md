@@ -1,8 +1,6 @@
 # tech504-test-ssh
 
-Table of contents
 
-* [Changing from HTTP to SSH](#Changing from HTTP to SSH)
 
 ## Changing from HTTP to SSH
 
@@ -66,9 +64,11 @@ The part after ssh refers to what I have called the key for the repo.
 ssh -T git@github.com
 Hi Harv-tank! You've successfully authenticated
 ```
-The above prompt ensures the key has been passed through succesfully and should recive a message similar to one above.
+The above prompt ensures the key has been passed through successfully and should recive a message similar to one above.
 <br>
 Then when attempt to push again it should successfully go through onto the repo
 
-
-
+``` bash
+ssh -i ~/.ssh/tech504-harvi-gcp htank@35.210.90.87
+```
+Above used to get into the VM created on GCP from anywhere on terminal 
